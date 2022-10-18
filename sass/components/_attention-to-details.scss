@@ -1,0 +1,30 @@
+.preference-sec {
+    padding: 94px 0px;
+}
+.preference{
+    @include flex-centre ($ai: none);
+    &-list {
+        margin-top: 0px;   
+    }
+    &-list:not(:last-child)
+    {
+        margin-right: 30px;
+    }
+    &-attention{
+        @include flex-centre ();
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        margin-bottom: 30px;
+    }
+    &-details {
+        margin: 0px;
+        text-transform: uppercase;
+        @include Roboto-700 ( $fsz: 14px, $lh: 1.14, $col: $title-text-color)}
+    &-about {
+        margin: 10px 0px 0px 0px;
+        max-width: 280px;
+        line-height: 1.71;
+        color: $primary-text-color;
+    }
+}

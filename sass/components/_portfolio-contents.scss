@@ -1,0 +1,101 @@
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip:rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.categories-contents {
+    position: relative;
+    padding: 94px 0px;   
+}
+.botn {
+    display: block;
+    @include flex-centre ();
+    width: 1200px;
+    &:not(:last-child) {
+        margin-right: 8px;
+        }
+    }
+    
+.btn {
+        border: none;
+        @include Roboto-500 ($lh: 1.6);
+        cursor: pointer;
+        height: 38px;
+        border-color: $background-color;
+        background-color: $background-color-2;
+        border-radius: 4px;
+        padding: 6px 22px;
+        transition: box-shadow 250ms  $cubic-bezier, color 250ms  $cubic-bezier, background-color 250ms  $cubic-bezier;
+        &:not(:first-child){
+            margin-left: 8px;}
+        &:hover,
+        &:focus {
+            background-color: $accent-color;
+            color: $secondary-text-color;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);  
+        }  
+    }
+    .categories-description {
+        display: block;
+        @include flex-centre ($jc:space-between);
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0px;
+        margin-top: 50px;
+        flex-basis: calc((100% - 60px) / 3);
+    }
+    .catego {
+        display: block;
+    &:hover,
+    &:focus{
+        transition: shadow 250ms  $cubic-bezier;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    }
+    .description{
+        position: relative;
+        overflow: hidden;
+        &-img{
+            display: block;
+        }
+    }
+    .description-product{
+        @include Roboto-400 ($fsz: 18px, $lh: 1.56, $col: $secondary-text-color);
+        position: absolute;
+        overflow: auto;
+        width:100%;   
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 63px 24px;
+        transform: translateY(100%);
+        background-color: $accent-color;
+        transition: transform 250ms  $cubic-bezier;
+    }
+    .catego:hover .description-product,
+    .catego:focus .description-product{
+        transform:translateY(0%);
+    }
+    .description-catego {
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        margin: 0px;
+        padding: 20px 24px;
+        &-categories {
+            @include Roboto-700 ( $fsz: 18px, $lh: 2, $lp: 0.06em, $col: $title-text-color);
+            margin: 0px;
+            margin-bottom: 4px;}
+            &-descr {
+                @include Roboto-400 ($fsz: 16px, $lh: 1.88, $col: $primary-text-color);
+                margin: 0px;
+                font-size: 16px;
+            }
+    }

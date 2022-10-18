@@ -1,0 +1,31 @@
+.portfolio-studio {
+    display: block;
+    padding: 5px;
+    color: $title-text-color;
+&:hover,
+&:focus{
+    color: $accent-color;
+    transition: color 250ms  $cubic-bezier;
+}
+}
+.portfolia {  
+    display: block;
+    padding: 5px;
+    color: $accent-color;
+    &:hover,
+    &:focus{
+        color: $accent-color;
+        transition: color 250ms  $cubic-bezier;
+    }    
+}
+.portfolio-current::after{
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 106px;
+    display: block;
+    width: 25%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+}

@@ -1,0 +1,237 @@
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img\ .svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $background-color;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    &-titles {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 40px;
+        width: 690px;
+        text-align: center;
+        @include Roboto-900 ($fsz: 44px, $col: $secondary-text-color); 
+        text-transform: uppercase;
+    }
+}
+.button{
+    @include flex-centre ();
+    margin-left: auto;
+    margin-right: auto;
+    padding:  10px 32px;
+    border: none; 
+    @include Roboto-700 ($fsz: 16px, $lh: 1.88, $lp: 0.06em, $col: #FFFFFF); 
+    cursor: pointer;
+    background-color: $secondary-text-color;
+    color: $header-logo-color;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $accent-color;
+    color: $secondary-text-color;
+    transition: color 250ms  $cubic-bezier, background-color 250ms  $cubic-bezier;   
+    &:focus,
+    &:hover{
+            fill:$accent-color;
+            cursor: pointer;
+            transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;}
+}
+    .button-close{
+        outline: none;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 480px;
+        top: 8px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        fill: $header-logo-color;
+        align-items: center;   
+    &-svg{
+        position: absolute; 
+        top: 0px;  
+        right: 0px;  
+         }
+    &:focus,
+    &:hover{
+            fill:$accent-color;
+            cursor: pointer;
+            transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;
+         }   
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); 
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility:hidden;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 520px;
+    height: 580px;
+    background-color: $secondary-text-color;
+    border-radius: 4px;
+    transition:  background-color 250ms  $cubic-bezier;
+&:hover,
+&:focus{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: box-shadow 250ms  $cubic-bezier;}
+
+    &-title{
+        position: relative;
+        display: block;
+        @include Roboto-700 ($fsz: 20px, $lh: 1.15, $lp: 0.03em, $col: $title-text-color);
+        text-align: center;
+        width: 100%;
+        margin-bottom: 12px;
+        margin-top: 10px;
+        transition: color 250ms  $cubic-bezier;
+    }
+    &-name{
+        height: 14px;
+        margin-bottom: 4px;
+        @include Roboto-400 ( $fsz: 12px, $lh: 1.17, $lp: 0.01em, $col: $primary-text-color);
+        transition: color 250ms  $cubic-bezier;
+    }  
+    &-text{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 42px;
+        outline: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        transition: border 250ms  $cubic-bezier;
+        border-radius: 4px;
+    }
+    &-icon{
+        position: absolute;
+        top: 55%;
+        left: 15px;      
+        transform: translateY(-50%);
+        display: inline-block;}
+    &-text:focus + &-icon,
+    &-text:hover + &-icon{
+        fill: $accent-color;
+        cursor: pointer;
+        transition: fill 250ms  $cubic-bezier;
+
+}
+    &-text:focus{
+        border: 1px solid $accent-color;
+        border-radius: 4px;
+        cursor: pointer;
+        border-color: $accent-color;
+        transition: border 250ms  $cubic-bezier,  border-color 250ms  $cubic-bezier;
+}
+}
+.modal-coment{
+    margin-bottom: 20px;
+    outline: none;
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 14px;
+    @include Roboto-400 ( $fsz: 12px, $lh: 1.17, $lp: 0.01em, $col:rgba(117, 117, 117, 0.5));
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: color 250ms  $cubic-bezier, border 250ms  $cubic-bezier;
+
+&:focus{
+    border-color: $accent-color;
+    transition: border-color 250ms  $cubic-bezier;
+}}
+textarea{resize: none;}
+.form-fild{
+    position: relative;
+    
+}
+.no-scrool{
+    overflow: hidden;
+}
+.lable{
+    position: relative;
+    @include Roboto-400 ();}
+.terms-contract{
+    outline: none;  
+}
+.checkbox{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    &:focus + .icon-checkbox-agree{
+            border-radius: 4px;
+        }
+    &:checked + .icon-checkbox-agree{
+            background-image: url('../images/modal-form-1/checed/checed.svg');
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-origin: border-box;
+            border-color: $accent-color;
+            border-radius: 4px;
+            transition: background-color 250ms  $cubic-bezier;
+        }
+    &:focus + .icon-checkbox-agree{
+                border-radius: 4px;
+    } 
+}
+.icon-checkbox-agree{
+    position: absolute;
+    display:inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    transition: border 250ms  $cubic-bezier;
+    top: 0.5px;
+    left: -22.5px;
+    padding: 4px 2px 3px 3px;
+    border-radius:4px;
+    transition: border 250ms  $cubic-bezier;
+}
+.checkbox-agree-contract{
+    color: $accent-color;
+    transition: color 250ms  $cubic-bezier;
+    text-decoration: underline;
+    &:focus{
+    color: #188CE8;
+    transition: color 250ms  $cubic-bezier;
+    }
+}
+.checkbox-send{
+    outline: none;
+    position: absolute;
+    top: 91%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: $secondary-text-color;
+    transition: box-shadow 250ms  $cubic-bezier, background 250ms  $cubic-bezier, color 250ms  $cubic-bezier;
+.checkbox-send:focus{
+    background: #188CE8;
+    cursor: pointer;
+    transition: background 250ms  $cubic-bezier;
+    }
+}
+
+

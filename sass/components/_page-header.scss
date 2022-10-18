@@ -1,0 +1,153 @@
+// Logotype
+.container {
+    max-width: 1230px;
+    margin: 0 auto;  
+    padding:0px 15px;
+    align-items: center;
+    &-1{
+        margin-left: 70px;
+    margin-top: 12px;
+    }
+    &-2{
+        @extend %display-center;
+        margin-top: 48px;
+        margin-left: 12px;
+        width: 200px;
+        height: 50px;
+        padding: 0;
+        position: relative;
+        background-color: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border:none;
+
+    }
+    &-footer
+{
+    width: 1230px;
+    margin: 0 auto;  
+    padding:0px 15px;
+    @include flex-centre ();
+}
+}
+
+.header {
+    border: 1px solid #ECECEC;
+    &-container {
+    @extend %display-center;
+    @include flex-centre ();
+
+    }
+    &-logo {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+    &-item:not(:first-child) {
+            margin-left: 50px ;
+        }
+}
+.logo-studio-f{ 
+    @include Raleway ($col: $secondary-text-color);
+        }
+.nav-header
+{   @include flex-centre ();
+    @include Roboto-500 ($fsz: 14px, $lh: 1.14, $lp: 0.02em, $col:  $primary-text-color);
+    transition: color 250ms  $cubic-bezier;
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+        transition: color 250ms  $cubic-bezier;
+    }
+    &-contacts {
+        @include flex-centre ($jc:end);
+    }
+    
+}
+.nav-info{
+    color: $primary-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function:  $cubic-bezier;
+    }
+.nav-info:hover,
+.nav-info:focus{
+    color: $accent-color;
+    transition: color 250ms  $cubic-bezier;}
+.nav-tel,
+.nav-info
+    {
+        @include flex-centre ();
+    }
+.nav-tel{
+        color: $primary-text-color;
+        transition: color 250ms  $cubic-bezier;
+    }
+.nav-tel:hover,
+.nav-tel:focus{
+        color: $accent-color;
+        transition: color 250ms  $cubic-bezier;
+    }
+.nav-contacts{
+    display: block;
+    margin-left: auto;
+    @include flex-centre ();
+    color:currentColor;
+    &-tel{
+        color: currentColor;
+        display: block;
+        margin-left:50px;}
+}
+ .studio {  
+        color: $accent-color;
+        display: block;
+        padding: 5px;
+        &:hover,
+        &:focus{
+            color: $accent-color;
+            transition: color 250ms  $cubic-bezier;}
+         &-current::after{
+            content: "";
+            position: absolute;
+            bottom: -28px;
+            left: 0;
+            display: block;
+            width: 18%;
+            height: 4px;
+            background-color: $accent-color;
+            border-radius: 2px;}    
+        &-contacts{
+            display: block;
+            margin-left: auto;
+            @include flex-centre ();
+            color:currentColor;
+ }}
+    .portfolio {
+        color: $title-text-color;
+        display: block;
+        padding: 5px;
+    
+    &:hover,
+    &:focus{
+        color: $accent-color;
+        transition: color 250ms  $cubic-bezier;
+    }}
+    .icon{
+        transition: fill 250ms  $cubic-bezier;
+        &-mail{
+            width: 16px;
+            height: 12px;
+            @include flex-centre ();
+            margin-right: 10px;
+            fill: currentColor;}
+        &-smartphone{ 
+            width: 10px;
+            height: 16px;
+            margin-right: 10px;
+            fill: currentColor;
+}
+    
+    }
+.style-none{
+        position: relative;
+}

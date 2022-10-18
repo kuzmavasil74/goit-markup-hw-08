@@ -1,0 +1,67 @@
+.team{
+    background-color: $background-color-2;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    &-title{
+        @include flex-centre ();
+        margin: 0px;
+        margin-bottom: 50px;
+        background-color: $background-color-2;
+        @include Roboto-700 ($col: $title-text-color);}
+    &-list-box {
+        background-color: #FFFFFF;
+        display: block;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;}
+    &-name {
+        display: block;
+        margin:0px;
+        text-align: center;
+    @include Roboto-500 ($lh:1.9, $col:$title-text-color)
+}
+    &-position {
+        display: block;
+        text-align: center;
+        margin:10px 0px 0px 0px;
+        line-height: 1.9;
+        fill: $primary-text-color;}
+        &-h {
+            @include flex-centre ();
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: $secondary-text-color;
+            fill: $links-color;
+            transition: background-color 250ms  $cubic-bezier;   
+        } 
+        &-h:hover,
+        &-h:focus{
+            fill:$secondary-text-color;
+            background-color: $accent-color;
+            transition: background-color 250ms  $cubic-bezier;
+        }        
+}
+
+.wrap-up {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sociallities{
+    @include flex-centre ();
+}
+.sociallity{
+    width: 44px;
+    height: 44px;
+    margin-top: 16px;
+    fill: $links-color;
+    align-items: center;
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+    &:first-child{
+        margin-left: 32px;
+    }
+    &:last-child{
+        margin-right: 32px;
+    }
+}

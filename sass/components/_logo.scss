@@ -1,0 +1,21 @@
+
+.logo-link {
+  @include Raleway($col: #2196f3);
+  @include flex-centre();
+    display: block;
+    margin-right: 93px;
+  }
+  .header-logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .logo{
+    @include Raleway($col: $header-logo-color);
+    color: $header-logo-color; 
+  }
+  .logo-footer {
+    margin-bottom: 20px;
+    .logo-footer-studio{
+      @include Raleway($col: $secondary-text-color);
+  }
+}
