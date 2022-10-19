@@ -2,3 +2,15 @@
     display: block;
     align-items: center;
   }
+  %flex-align {
+    display: flex;
+    align-items: center;
+  }
+  %justify {
+    display: flex;
+    justify-content: center;
+  }
+  %padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }

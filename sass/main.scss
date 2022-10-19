@@ -1,7 +1,10 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
-@import './components/body';
+@import './utils/visually-hidden';
+
+@import './base/normalize';
+
 @import './components/logo';
 @import './components/page-header';
 @import './components/hero';
@@ -9,6 +12,7 @@
 @import './components/what-are-we-do';
 @import './components/our-team';
 @import './components/regular-customers';
-@import './components/footer';
+@import './components/footer'
+;
 @import './components/portfolio-header';
 @import './components/portfolio-contents';

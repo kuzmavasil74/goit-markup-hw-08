@@ -1,117 +1,117 @@
-.footer {
-    display: flex;
-    background-color: $background-color;
-    padding: 60px 0px;
-    align-items: baseline;
-    &-container
-{
-    width: 1230px;
-    margin: 0 auto;  
-    padding:0px 15px;
-    display: flex;}
+// .footer {
+//     display: flex;
+//     background-color: $background-color;
+//     padding: 60px 0px;
+//     align-items: baseline;
+//     &-container
+// {
+//     width: 1230px;
+//     margin: 0 auto;  
+//     padding:0px 15px;
+//     display: flex;}
 
-}
-.adress{
-    background-color: $background-color;
-    font-style: normal;
-    &-contacts {
-       display: block;
-       display: flex;
-       flex-direction: column;
-    }
-    &-link:not(:first-child) {
-        margin-top: 9px;
-     }
-     &-map {
-        display: block;
-        display: flex;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $secondary-text-color;
-        }
-    &-map:hover,
-    &-map:focus{
-        color: $accent-color;
-        transition: color 250ms  $cubic-bezier;
-    }      
-     &-contacts-link{
-        display: block;
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: $contacts-text-color;
-    }
-    &-contacts-link:hover,
-    &-contacts-link:focus{
-        color: $accent-color;
-    }        
-}
-.join-container {
-    margin-left: 70px;
-    margin-top: 12px;
-  }
-.clients-title{
-    @include Roboto-700 ($fsz: 14px, $lh: 1.14, $col: $secondary-text-color);
-    margin-bottom: 20px;   
-}
-.join-logo{  
-    @include flex-centre ();
-    margin-right: 10px;
-}
-.join-item{
-   @include flex-centre ();
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms $cubic-bezier;
-    &:hover,
-    &:focus{
-    fill: $secondary-text-color;
-    background-color:  $accent-color;
-    transition: background-color 250ms $cubic-bezier;
-    transition: fill 250ms $cubic-bezier;
-}
-}
-.join-svg
-{
-    fill: $secondary-text-color;
-}
-.footer-sub{
-    outline: none;
-    padding-left: 16px;
-    width: 358px;
-    height: 50px;
-    color: $secondary-text-color;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: $background-color;
-    transition: filter 250ms $cubic-bezier;
-    &:focus{
-        border-color: $accent-color;
-        }   
-}
-.telegram-container{
-    @extend %display-center;
-    margin-top: 48px;
-    margin-left: 12px;
-    width: 200px;
-    height: 50px;
-    padding: 0;
-    position: relative;
-    background-color: $accent-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border:none;
-}
-.telegram-svg{
-    @include flex-centre ();
-    width: 144px;
-    height: 40px; 
-    margin: 0px 28px;
-}
+// }
+// .adress{
+//     background-color: $background-color;
+//     font-style: normal;
+//     &-contacts {
+//        display: block;
+//        display: flex;
+//        flex-direction: column;
+//     }
+//     &-link:not(:first-child) {
+//         margin-top: 9px;
+//      }
+//      &-map {
+//         display: block;
+//         display: flex;
+//         font-size: 14px;
+//         line-height: 1.71;
+//         letter-spacing: 0.03em;
+//         color: $secondary-text-color;
+//         }
+//     &-map:hover,
+//     &-map:focus{
+//         color: $accent-color;
+//         transition: color 250ms  $cubic-bezier;
+//     }      
+//      &-contacts-link{
+//         display: block;
+//         display: flex;
+//         flex-direction: column;
+//         font-size: 14px;
+//         line-height: 1.71;
+//         letter-spacing: 0.03em;
+//         color: $contacts-text-color;
+//     }
+//     &-contacts-link:hover,
+//     &-contacts-link:focus{
+//         color: $accent-color;
+//     }        
+// }
+// .join-container {
+//     margin-left: 70px;
+//     margin-top: 12px;
+//   }
+// .clients-title{
+//     @include Roboto-700 ($fsz: 14px, $lh: 1.14, $col: $secondary-text-color);
+//     margin-bottom: 20px;   
+// }
+// .join-logo{  
+//     @include flex-centre ();
+//     margin-right: 10px;
+// }
+// .join-item{
+//    @include flex-centre ();
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50%;
+//     margin-right: 10px;
+//     background-color: rgba(255, 255, 255, 0.1);
+//     transition: background-color 250ms $cubic-bezier;
+//     &:hover,
+//     &:focus{
+//     fill: $secondary-text-color;
+//     background-color:  $accent-color;
+//     transition: background-color 250ms $cubic-bezier;
+//     transition: fill 250ms $cubic-bezier;
+// }
+// }
+// .join-svg
+// {
+//     fill: $secondary-text-color;
+// }
+// .footer-sub{
+//     outline: none;
+//     padding-left: 16px;
+//     width: 358px;
+//     height: 50px;
+//     color: $secondary-text-color;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//     background: $background-color;
+//     transition: filter 250ms $cubic-bezier;
+//     &:focus{
+//         border-color: $accent-color;
+//         }   
+// }
+// .telegram-container{
+//     @extend %display-center;
+//     margin-top: 48px;
+//     margin-left: 12px;
+//     width: 200px;
+//     height: 50px;
+//     padding: 0;
+//     position: relative;
+//     background-color: $accent-color;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border:none;
+// }
+// .telegram-svg{
+//     @include flex-centre ();
+//     width: 144px;
+//     height: 40px; 
+//     margin: 0px 28px;
+// }

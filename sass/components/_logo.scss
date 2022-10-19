@@ -1,21 +1,19 @@
-
-.logo-link {
-  @include Raleway($col: #2196f3);
-  @include flex-centre();
-    display: block;
-    margin-right: 93px;
+.logo-link  {
+    text-decoration: none;
+    color: $title-text-color;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    display: flex;
   }
-  .header-logo{
-    padding-top: 24px;
-    padding-bottom: 25px;
+  
+  .logo {
+    color: $accent-color;
   }
-  .logo{
-    @include Raleway($col: $header-logo-color);
-    color: $header-logo-color; 
+.logo-footer-studio {
+    color: $secondary-text-color;
   }
   .logo-footer {
-    margin-bottom: 20px;
-    .logo-footer-studio{
-      @include Raleway($col: $secondary-text-color);
+    color: $accent-color;
   }
-}

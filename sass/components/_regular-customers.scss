@@ -1,20 +1,20 @@
-.customers{
-    padding-bottom: 94px;
-    padding-top: 94px;  
-    &-li{
-        @include flex-centre ();
-        width: 170px;
-        height: 92px;
-        fill: $links-color;
-        border: 1px solid #AFB1B8;
-        border-radius: 4px;
-        transition:background-color 250ms  $cubic-bezier;               
-}
-&-li:hover,
-&-li:focus{
-        fill: $accent-color;
-        cursor: pointer;
-        border-color: $accent-color;}
-&-svg{
-        transition: fill 250ms  $cubic-bezier;} 
-}
+// .customers{
+//     padding-bottom: 94px;
+//     padding-top: 94px;  
+//     &-li{
+//         @include flex-centre ();
+//         width: 170px;
+//         height: 92px;
+//         fill: $links-color;
+//         border: 1px solid #AFB1B8;
+//         border-radius: 4px;
+//         transition:background-color 250ms  $cubic-bezier;               
+// }
+// &-li:hover,
+// &-li:focus{
+//         fill: $accent-color;
+//         cursor: pointer;
+//         border-color: $accent-color;}
+// &-svg{
+//         transition: fill 250ms  $cubic-bezier;} 
+// }
