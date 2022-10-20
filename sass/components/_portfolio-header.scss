@@ -1,31 +1,75 @@
-// .portfolio-studio {
-//     display: block;
-//     padding: 5px;
-//     color: $title-text-color;
-// &:hover,
-// &:focus{
-//     color: $accent-color;
-//     transition: color 250ms  $cubic-bezier;
-// }
-// }
-// .portfolia {  
-//     display: block;
-//     padding: 5px;
-//     color: $accent-color;
-//     &:hover,
-//     &:focus{
-//         color: $accent-color;
-//         transition: color 250ms  $cubic-bezier;
-//     }    
-// }
-// .portfolio-current::after{
-//     content: "";
-//     position: absolute;
-//     bottom: -28px;
-//     left: 106px;
-//     display: block;
-//     width: 25%;
-//     height: 4px;
-//     background-color: $accent-color;
-//     border-radius: 2px;
-// }
+.portfolio{
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+@media screen and (max-width:767px){
+.portfolio{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;   
+}
+.portfolio-current {
+color: #2196f3;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px){
+    .portfolio{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    }
+    .portfolio-current {
+    color: #2196f3;
+    }
+    
+    }
+
+
+    @media screen and (min-width:1200px) {
+
+        .clients-container {
+            width: 1200px;
+          }
+
+
+        .portfolio{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
+        }
+        .portfolio-current {
+            color: #2196f3;
+            }
+        .portfolio-current::after {
+            content: "";
+            position: absolute;
+            bottom: -32.5px;
+            left: -5px;
+            display: block;
+            width: 75px;
+            height: 4px;
+            background-color: #2196f3;
+            border-radius: 2px;
+        }
+        
+        }

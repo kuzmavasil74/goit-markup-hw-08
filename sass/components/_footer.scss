@@ -1,7 +1,7 @@
 .join-item{
     @include flex-centre ();
-     width: 40px;
-     height: 40px;
+     width: 44px;
+     height: 44px;
      border-radius: 50%;
      margin-right: 10px;
      background-color: rgba(255, 255, 255, 0.1);
@@ -13,6 +13,16 @@
      transition: background-color 250ms $cubic-bezier;
      transition: fill 250ms $cubic-bezier;
  }
+ }
+ 
+ .contacts-mailto-footer,
+ .contacts-tel-footer{
+    padding-top: 9px;
+ }
+
+
+ .footer-sub:focus{
+    border-color: $accent-color;
  }
  .join-svg
  {
@@ -128,7 +138,7 @@
         margin-top: 8px;
       }
     }
-  
+ 
     .join-container1 {
       max-width: 450px;
       width: 97%;
@@ -438,6 +448,10 @@
       line-height: 24px;
       color: $secondary-text-color;
       letter-spacing: 0.03em;
+      &:focus,
+      &:hover{
+        color: $accent-color;
+      }
     }
     .contacts-mailto-footer,
     .contacts-tel-footer,
@@ -449,7 +463,7 @@
     .contacts-mailto-footer:focus,
     .contacts-tel-footer:focus,
     .contacts-mailto-footer:hover {
-      color: $contacts-text-color;
+      color: $accent-color;
     }
     .adress-contacts {
       margin-top: 9px;
@@ -466,6 +480,7 @@
       margin-left: auto;
     }
     .footer-sub {
+        outline: none;
       color: white;
       width: 358px;
       height: 50px;
