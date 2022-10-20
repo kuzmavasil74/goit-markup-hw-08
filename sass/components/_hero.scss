@@ -134,6 +134,9 @@ textarea{resize: none;}
 
 
 @media screen and (max-width: 767px){
+    .coment{
+        @include Roboto-400 ($fsz: 12px, $lh: 1.17, $lp: 0.01em);
+      }
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-mobile\ .svg);
         background-repeat: no-repeat;
@@ -150,6 +153,7 @@ textarea{resize: none;}
             margin-bottom: 30px;
         }
     }
+}
 .modal{
     position: absolute;
     top: 50%;
@@ -242,8 +246,9 @@ textarea{resize: none;}
             transition: background 250ms  $cubic-bezier;
             }
         }        
-}
+
 @media screen and (min-width:768px) and (max-width:1199px){
+    
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-tablet.svg);
         width:768px;

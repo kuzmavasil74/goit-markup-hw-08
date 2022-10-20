@@ -262,7 +262,7 @@ body {
   .current::after {
     content: "";
     position: absolute;
-    bottom: 539px;
+    bottom: 596px;
     left: 245px;
     display: block;
     width: 50px;
@@ -455,8 +455,8 @@ body {
   .current::after {
     content: "";
     position: absolute;
-    bottom: 562px;
-    left: 305px;
+    bottom: -32.5px;
+    left: -5px;
     display: block;
     width: 50px;
     height: 4px;
@@ -464,6 +464,7 @@ body {
     border-radius: 2px;
   }
   .studio {
+    position: relative;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -521,7 +522,7 @@ body {
   }
   .icon-mail {
     position: absolute;
-    top: 7px;
+    top: 5px;
     left: -25px;
     margin-right: 10px;
     width: 16px;
@@ -531,7 +532,7 @@ body {
   }
   .icon-smartphone {
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: -20px;
     margin-right: 10px;
     width: 10px;
@@ -702,6 +703,15 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+  .coment {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-mobile\ .svg);
     background-repeat: no-repeat;
@@ -724,117 +734,123 @@ textarea {
     color: #ffffff;
     margin-bottom: 30px;
   }
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 40px;
-    width: 450px;
-    height: 609px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal:hover, .modal:focus {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .button-close {
-    outline: none;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 412px;
-    top: 8px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    fill: #000000;
-    align-items: center;
-  }
-  .button-close-svg {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  }
-  .button-close:focus, .button-close:hover {
-    fill: #2196f3;
-    cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-title {
-    position: relative;
-    display: block;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #212121;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 12px;
-    margin-top: 10px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-coment {
-    margin-bottom: 20px;
-    outline: none;
-    width: 100%;
-    height: 120px;
-    margin-top: 4px;
-    padding: 12px 14px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-coment:focus {
-    border-color: #2196f3;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .lable-send {
-    position: relative;
-    margin-left: 22px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
-  .checkbox-send {
-    outline: none;
-    position: absolute;
-    top: 91%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    color: #ffffff;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .checkbox-send:focus {
-    background: #188CE8;
-    cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
 }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 450px;
+  height: 609px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal:hover, .modal:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close {
+  outline: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 412px;
+  top: 8px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: #000000;
+  align-items: center;
+}
+.button-close-svg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.button-close:focus, .button-close:hover {
+  fill: #2196f3;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+  position: relative;
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 12px;
+  margin-top: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-coment {
+  margin-bottom: 20px;
+  outline: none;
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-coment:focus {
+  border-color: #2196f3;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lable-send {
+  position: relative;
+  margin-left: 22px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.checkbox-send {
+  outline: none;
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-send:focus {
+  background: #188CE8;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-tablet.svg);
@@ -1682,7 +1698,7 @@ textarea {
     color: rgba(255, 255, 255, 0.6);
   }
   .adress-contacts {
-    margin-top: 19px;
+    margin-top: 8px;
     padding: 0;
   }
   .adress-link {
@@ -1748,11 +1764,21 @@ textarea {
     font-style: normal;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .logo-link {
+    margin-bottom: 20px;
+  }
+  .header__contacts-item {
+    margin-bottom: 32px;
+  }
+  .nav-contacts {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1791,18 +1817,6 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .clients-title {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
   }
   .adress-map {
     margin-top: 20px;
@@ -1851,13 +1865,6 @@ textarea {
     fill: currentColor;
     margin-left: 10px;
   }
-  .footer-mailing-wrapper {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .contacts-mailto-footer,
 .contacts-tel-footer {
     text-decoration: none;
@@ -1886,6 +1893,16 @@ textarea {
   .join-container {
     margin: 0 0;
   }
+  .footer-mailing-wrapper {
+    width: 450px;
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+    min-width: 300px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1199px) {
   .telegram-container {
@@ -1909,6 +1926,18 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .clients-title {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -2004,9 +2033,10 @@ textarea {
     margin-left: 10px;
   }
   .footer-mailing-wrapper {
-    margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
   }
   .telegram-container {
     margin-top: 0;
@@ -2022,5 +2052,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .logo-link {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

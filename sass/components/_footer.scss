@@ -118,7 +118,7 @@
       color: $contacts-text-color;
     }
     .adress-contacts {
-      margin-top: 19px;
+      margin-top: 8px;
       padding: 0;
     }
     .adress-link {
@@ -187,11 +187,21 @@
       font-style: normal;
     }
   }
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     .footer-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
+    }
+    .logo-link{
+        margin-bottom: 20px;
+    }
+    .header__contacts-item{
+        margin-bottom: 32px;
+    }
+    .nav-contacts{
+        display: flex;
+    flex-direction: column-reverse;
     }
   }
   @media screen and (min-width: 768px) {
@@ -238,18 +248,6 @@
       flex-direction: column;
   
       align-items: center;
-    }
-    .clients-title {
-      display: flex;
-    justify-content: center;
-      align-self: center;
-      font-family: inherit;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #ffffff;
     }
   
     .adress-map {
@@ -302,13 +300,6 @@
       margin-left: 10px;
     }
   
-    .footer-mailing-wrapper {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
   
     .contacts-mailto-footer,
     .contacts-tel-footer {
@@ -341,6 +332,16 @@
     .join-container {
       margin: 0 0;
     }
+    .footer-mailing-wrapper {
+    width: 450px;
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+    min-width: 300px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    }
   }
   @media screen and (max-width: 1199px) {
     .telegram-container {
@@ -366,6 +367,18 @@
       flex-direction: column;
       align-items: center;
     }
+    .clients-title {
+        display: flex;
+      justify-content: center;
+        align-self: center;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
   }
   
   @media screen and (min-width: 1199px) {
@@ -467,10 +480,10 @@
       margin-left: 10px;
     }
     .footer-mailing-wrapper {
-      margin-top: 20px;
-  
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 20px;
     }
     .telegram-container {
       margin-top: 0;
@@ -486,5 +499,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    .logo-link{
+        margin-bottom: 20px;
     }
   }
