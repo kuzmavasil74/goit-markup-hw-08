@@ -1,117 +1,490 @@
-// .footer {
-//     display: flex;
-//     background-color: $background-color;
-//     padding: 60px 0px;
-//     align-items: baseline;
-//     &-container
-// {
-//     width: 1230px;
-//     margin: 0 auto;  
-//     padding:0px 15px;
-//     display: flex;}
-
-// }
-// .adress{
-//     background-color: $background-color;
-//     font-style: normal;
-//     &-contacts {
-//        display: block;
-//        display: flex;
-//        flex-direction: column;
-//     }
-//     &-link:not(:first-child) {
-//         margin-top: 9px;
-//      }
-//      &-map {
-//         display: block;
-//         display: flex;
-//         font-size: 14px;
-//         line-height: 1.71;
-//         letter-spacing: 0.03em;
-//         color: $secondary-text-color;
-//         }
-//     &-map:hover,
-//     &-map:focus{
-//         color: $accent-color;
-//         transition: color 250ms  $cubic-bezier;
-//     }      
-//      &-contacts-link{
-//         display: block;
-//         display: flex;
-//         flex-direction: column;
-//         font-size: 14px;
-//         line-height: 1.71;
-//         letter-spacing: 0.03em;
-//         color: $contacts-text-color;
-//     }
-//     &-contacts-link:hover,
-//     &-contacts-link:focus{
-//         color: $accent-color;
-//     }        
-// }
-// .join-container {
-//     margin-left: 70px;
-//     margin-top: 12px;
-//   }
-// .clients-title{
-//     @include Roboto-700 ($fsz: 14px, $lh: 1.14, $col: $secondary-text-color);
-//     margin-bottom: 20px;   
-// }
-// .join-logo{  
-//     @include flex-centre ();
-//     margin-right: 10px;
-// }
-// .join-item{
-//    @include flex-centre ();
-//     width: 40px;
-//     height: 40px;
-//     border-radius: 50%;
-//     margin-right: 10px;
-//     background-color: rgba(255, 255, 255, 0.1);
-//     transition: background-color 250ms $cubic-bezier;
-//     &:hover,
-//     &:focus{
-//     fill: $secondary-text-color;
-//     background-color:  $accent-color;
-//     transition: background-color 250ms $cubic-bezier;
-//     transition: fill 250ms $cubic-bezier;
-// }
-// }
-// .join-svg
-// {
-//     fill: $secondary-text-color;
-// }
-// .footer-sub{
-//     outline: none;
-//     padding-left: 16px;
-//     width: 358px;
-//     height: 50px;
-//     color: $secondary-text-color;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     border-radius: 4px;
-//     background: $background-color;
-//     transition: filter 250ms $cubic-bezier;
-//     &:focus{
-//         border-color: $accent-color;
-//         }   
-// }
-// .telegram-container{
-//     @extend %display-center;
-//     margin-top: 48px;
-//     margin-left: 12px;
-//     width: 200px;
-//     height: 50px;
-//     padding: 0;
-//     position: relative;
-//     background-color: $accent-color;
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: 4px;
-//     border:none;
-// }
-// .telegram-svg{
-//     @include flex-centre ();
-//     width: 144px;
-//     height: 40px; 
-//     margin: 0px 28px;
-// }
+.join-item{
+    @include flex-centre ();
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin-right: 10px;
+     background-color: rgba(255, 255, 255, 0.1);
+     transition: background-color 250ms $cubic-bezier;
+     &:hover,
+     &:focus{
+     fill: $secondary-text-color;
+     background-color:  $accent-color;
+     transition: background-color 250ms $cubic-bezier;
+     transition: fill 250ms $cubic-bezier;
+ }
+ }
+ .join-svg
+ {
+     fill: $secondary-text-color;
+ }
+ .clients-title{
+    @include Roboto-700 ($fsz: 14px, $lh: 1.14, $col: $secondary-text-color); 
+}
+.telegram-container{
+    @extend %display-center;
+    margin-top: 48px;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    position: relative;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border:none;
+}
+.telegram-svg{
+    @include flex-centre ();
+    width: 144px;
+    height: 40px; 
+    margin: 0px 28px;
+}
+@media screen and (max-width: 767px) {
+    .footer {
+      background: $background-color;
+      padding: 60px 0;
+    }
+    .footer-container {
+      text-align: center;
+    }
+    .footer-adress-container {
+      margin: 0 auto;
+      width: 480px;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-svg-item {
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+      }
+  
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  
+  
+    .join-logo {
+      display: flex;
+      margin-top: 20px;
+    }
+    .join-container {
+      margin: 0 auto;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+  
+      align-items: center;
+    }
+    .clients-title {
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  
+    .adress-map {
+      margin-bottom: 10px;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: $secondary-text-color;
+      letter-spacing: 0.03em;
+    }
+    .contacts-mailto-footer,
+    .contacts-tel-footer,
+    .contacts-mailto-footer,
+    .contacts-tel-footer {
+      color: $contacts-text-color;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .contacts-tel-footer:hover,
+    .contacts-mailto-footer:focus,
+    .contacts-tel-footer:focus,
+    .contacts-mailto-footer:hover {
+      color: $contacts-text-color;
+    }
+    .adress-contacts {
+      margin-top: 19px;
+      padding: 0;
+    }
+    .adress-link {
+      list-style-type: none;
+      height: 16px;
+      &:last-child {
+        margin-top: 8px;
+      }
+    }
+  
+    .join-container1 {
+      max-width: 450px;
+      width: 97%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-sub {
+      color: white;
+      width: 450px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: none;
+      padding-left: 16px;
+    }
+    .telegram-container {
+      margin-top: 20px;
+      width: 200px;
+      height: 50px;
+      padding: 0%;
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border: none;
+      border-radius: 4px;
+      color: $secondary-text-color;
+      background-color: $accent-color;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .telegram-svg {
+      fill: currentColor;
+      margin-left: 10px;
+    }
+  
+    .footer-mailing-wrapper {
+      max-width: 450px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .contacts-mailto-footer,
+    .contacts-tel-footer {
+      text-decoration: none;
+      color: #757575;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      font-style: normal;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .footer {
+      background: $background-color;
+      padding: 60px 0;
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 768px;
+      margin-right: auto;
+      margin-left: auto;
+      align-items: baseline;
+    }
+  
+    .footer-svg-item {
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+      }
+  
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  
+  
+    .join-logo {
+      display: flex;
+  
+      margin-top: 20px;
+    }
+    .join-container {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  
+      align-items: center;
+    }
+    .clients-title {
+      display: flex;
+    justify-content: center;
+      align-self: center;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  
+    .adress-map {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: $secondary-text-color;
+      letter-spacing: 0.03em;
+    }
+    .contacts-mailto-footer,
+    .contacts-tel-footer,
+    .contacts-mailto-footer,
+    .contacts-tel-footer {
+      color: $contacts-text-color;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .contacts-tel-footer:hover,
+    .contacts-mailto-footer:focus,
+    .contacts-tel-footer:focus,
+    .contacts-mailto-footer:hover {
+      color: $contacts-text-color;
+    }
+    .adress-contacts {
+      margin-top: 35px;
+      padding: 0;
+    }
+    .adress-link {
+      list-style-type: none;
+      height: 16px;
+      &:last-child {
+        margin-top: 8px;
+      }
+    }
+  
+    .footer-sub {
+      color: white;
+      width: 450px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: none;
+      padding-left: 16px;
+    }
+  
+    .telegram-svg {
+      fill: currentColor;
+      margin-left: 10px;
+    }
+  
+    .footer-mailing-wrapper {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .contacts-mailto-footer,
+    .contacts-tel-footer {
+      text-decoration: none;
+      color: #757575;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      font-style: normal;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .join-container1 {
+      width: 450px;
+      margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+  
+      align-self: center;
+      min-width: 300px;
+    }
+    .footer-adress-container {
+      display: flex;
+      flex-direction: column;
+  
+      align-items: center;
+    }
+    .join-container {
+      margin: 0 0;
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .telegram-container {
+      margin-top: 20px;
+      margin-left: 0px;
+      width: 200px;
+      height: 50px;
+      padding: 0%;
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border: none;
+      border-radius: 4px;
+      color: $secondary-text-color;
+      background-color: $accent-color;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .adress {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media screen and (min-width: 1199px) {
+    footer {
+      background: $background-color;
+      padding: 60px 0;
+    }
+    .footer-container {
+      display: flex;
+      flex-direction: row;
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      align-items: baseline;
+    }
+    .footer-svg-item {
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+      }
+  
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  
+    .join-logo {
+      display: flex;
+      margin-top: 20px;
+    }
+    .join-container {
+      margin: 0;
+      margin-left: 70px;
+    }
+    .clients-title {
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  
+    .adress-map {
+      margin: 0;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: $secondary-text-color;
+      letter-spacing: 0.03em;
+    }
+    .contacts-mailto-footer,
+    .contacts-tel-footer,
+    .contacts-mailto-footer,
+    .contacts-tel-footer .contacts-mailto-footer {
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .contacts-tel-footer:hover,
+    .contacts-mailto-footer:focus,
+    .contacts-tel-footer:focus,
+    .contacts-mailto-footer:hover {
+      color: $contacts-text-color;
+    }
+    .adress-contacts {
+      margin-top: 9px;
+      padding: 0;
+    }
+    .adress-link {
+      list-style-type: none;
+  
+      &:last-child {
+        margin-top: 9px;
+      }
+    }
+    .join-container1 {
+      margin-left: auto;
+    }
+    .footer-sub {
+      color: white;
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background: none;
+      padding-left: 16px;
+    }
+    .telegram-svg {
+      fill: currentColor;
+      margin-left: 10px;
+    }
+    .footer-mailing-wrapper {
+      margin-top: 20px;
+  
+      display: flex;
+      flex-direction: row;
+    }
+    .telegram-container {
+      margin-top: 0;
+      margin-left: 12px;
+      height: 50px;
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border: none;
+      border-radius: 4px;
+      color: $secondary-text-color;
+      background-color: $accent-color;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }

@@ -1,38 +1,51 @@
-// .sec {
-//     letter-spacing: 0.03em;
-//     padding-bottom: 94px;
-// }
-// .portfolio-section {
-//     @include flex-centre ($jc:space-around);
-//     @include Roboto-700 ( $col: $title-text-color);
-//     margin: 0px;
-//     margin-bottom: 50px;
-//     &-li{   
-//             display: block;
-//             @include flex-centre ($jc:space-between);
-//             margin: 0px;
-//         }
-//     }
-// .preference-li-lis {
-//     display: block;
-//     width: 370px;
-//     height: 294px 
-// }
-// .preference-li-lis:not(:first-child)
-// {
-//     margin-left: 30px;
-// }
-// .pref-anim{
-//     position: relative;
-// }
-// .prefer-img {
-//     display: block;}
-// .prefer-option{
-//     @include Roboto-700 ($fsz: 14px, $lh: 1.14, $col: $secondary-text-color);
-//     @include flex-centre ();
-//         position: absolute;
-//         bottom:0;
-//         width: 100%;
-//         height: 70px;
-//         background: rgba(47, 48, 58, 0.8);
-// }
+@media screen and (max-width: 1199px) {
+    .sec {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 15px;
+    }
+    .sec {
+        letter-spacing: 0.03em;
+        padding-bottom: 94px;
+    }
+    .portfolio-section {
+        @include flex-centre ($jc:space-around);
+        @include Roboto-700 ( $col: $title-text-color);
+        margin: 0px;
+        margin-bottom: 50px;
+        &-li{   
+                display: block;
+                @include flex-centre ($jc:space-between);
+                margin: 0px;
+            }
+        }
+    .preference-li-lis {
+        display: block;
+        width: 370px;
+        height: 294px 
+    }
+    .preference-li-lis:not(:first-child)
+    {
+        margin-left: 30px;
+    }
+    .pref-anim{
+        position: relative;
+    }
+    .prefer-img {
+        display: block;}
+    .prefer-option{
+        @include Roboto-700 ($fsz: 14px, $lh: 1.14, $col: $secondary-text-color);
+        @include flex-centre ();
+            position: absolute;
+            bottom:0;
+            width: 100%;
+            height: 70px;
+            background: rgba(47, 48, 58, 0.8);
+    }
+  }

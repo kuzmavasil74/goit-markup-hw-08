@@ -37,7 +37,7 @@
                     </svg>
                 </button>
             <!--Contacts-->
-             <ul class="nav-header nav-contacts">
+             <ul class="nav-contacts">
              <li class="header__contacts-item"><a  href="mailto:info@devstudio.com" class="header__contacts-link">
                  <svg vieWox="0 0 100 100" width="16px" height="12px" class="icon-mail">
                  <use href="./images/links/symbol-defs.svg#icon-envelope"></use></svg>
@@ -98,7 +98,7 @@
                         </div>
 
                         <div class="form-fild">
-                            <label class="lable" for="checkbox-agree">
+                            <label class="lable-send" for="checkbox-agree">
                             <input class="checkbox" type="checkbox" name="topic" id="checkbox-agree"/>
                             <span class="icon-checkbox-agree"></span> 
                             Погоджуюся з розсилкою та приймаю 
@@ -194,7 +194,7 @@
                     <li class="team-list-box"><img class="prefer-img" src="./images/our_team-2.jpg" alt="Olga Repina" width="270">
                             <div class="wrap-up"><h3 class="team-name">Ольга Рєпіна</h3>
                                 <p class="team-position">Frontend Developer</p>
-                                <ul class="portfolio-section-li">
+                                <ul class="sociallities">
                                     <li  class="sociallity"><a class="team-h"  href="">
                                         <svg class="icon" vieWox="0 0 100 100" width="20px" height="20px" class="team-sprite">
                                             <use href="./images/Our_team/team-sprite.svg#icon-instagram"></use></svg> 
@@ -215,7 +215,7 @@
                     <li class="team-list-box"><img class="prefer-img" src="./images/our_team-3.jpg" alt="Mykola Tarasov" width="270">
                             <div class="wrap-up"><h3 class="team-name">Микола Тарасов</h3>
                                 <p class="team-position">Marketing</p>
-                                <ul class="portfolio-section-li">
+                                <ul class="sociallities">
                                     <li  class="sociallity"><a class="team-h"  href="">
                                         <svg class="icon" vieWox="0 0 100 100" width="20px" height="20px" class="team-sprite">
                                             <use href="./images/Our_team/team-sprite.svg#icon-instagram"></use></svg> 
@@ -236,7 +236,7 @@
                     <li class="team-list-box"><img class="prefer-img" src="./images/our_team-4.jpg" alt="Myhajlo Jermakov" width="270">
                             <div class="wrap-up"><h3 class="team-name">Михайло Єрмаков</h3>
                                 <p class="team-position">UI Designer</p>
-                                <ul class="portfolio-section-li ger">
+                                <ul class="sociallities ger">
                                     <li  class="sociallity"><a class="team-h"  href="">
                                         <svg class="icon" vieWox="0 0 100 100" width="20px" height="20px" class="team-sprite">
                                             <use href="./images/Our_team/team-sprite.svg#icon-instagram"></use></svg> 
@@ -259,30 +259,30 @@
     </section>
     <!-- Regular customers -->
     <section class="customers">
-    <div class="container">
+    <div class="clients-container container">
         <h2 class="portfolio-section">Постійні клієнти</h2>
-        <ul class="portfolio-section-li">
-            <li><a class="customers-li" href="">
+        <ul class="our-clients-list">
+            <li class="client-item"><a class="customers-li" href="">
                 <svg class="customers-svg" vieWox="0 0 100 100" width="41px" height="47px" class="symbol-defs">
                 <use href="./images/Regular customers/symbol-defs.svg#customers-1"></use></svg>
              </a></li>
-            <li><a class="customers-li" href="">
+            <li class="client-item"><a class="customers-li" href="">
                 <svg class="customers-svg" vieWox="0 0 100 100" width="40px" height="52px" class="symbol-defs">
                     <use href="./images/Regular customers/symbol-defs.svg#customers-2"></use></svg>
             </a></li>
-            <li><a class="customers-li" href="">
+            <li class="client-item"><a class="customers-li" href="">
                 <svg class="customers-svg" vieWox="0 0 100 100" width="44px" height="42px" class="symbol-defs">
                     <use href="./images/Regular customers/symbol-defs.svg#customers-3"></use></svg>
             </a></li>
-            <li><a class="customers-li" href="">
+            <li class="client-item"><a class="customers-li" href="">
                 <svg class="customers-svg" vieWox="0 0 100 100" width="85px" height="41px" class="symbol-defs">
                     <use href="./images/Regular customers/symbol-defs.svg#customers-4"></use></svg>
             </a></li>
-            <li><a class="customers-li" href="">
+            <li class="client-item"><a class="customers-li" href="">
                 <svg class="customers-svg" vieWox="0 0 100 100" width="63px" height="46px" class="symbol-defs">
                     <use href="./images/Regular customers/symbol-defs.svg#customers-5"></use></svg>
             </a></li>
-            <li><a class="customers-li" href="">
+            <li class="client-item"><a class="customers-li" href="">
                 <svg class="customers-svg" vieWox="0 0 100 100" width="94px" height="44px" class="symbol-defs">
                     <use href="./images/Regular customers/symbol-defs.svg#customers-6"></use></svg>
             </a></li>
@@ -293,14 +293,14 @@
     <footer class="footer">
     <div class="footer-container"><!--footer-->
             <!--Logotype-->
-            <div class="">
+            <div class="footer-adress-container">
                 <a class="logo-link logo-footer" href="./index.html"> Web<span class="logo-footer-studio">Studio</span></a>
                 <!--adress-->
                 <address class="adress">
+                    <li class="adress-link" id="contacts"><a class="adress-map" href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&usp=sharing" rel="noopener noreferrer nofollow" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
                     <ul class="adress-contacts">
-                        <li class="adress-link" id="contacts"><a class="adress-map" href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&usp=sharing" rel="noopener noreferrer nofollow" target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
-                        <li class="adress-link"><a class="adress-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="adress-link"><a class="adress-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li class="adress-link"><a class="contacts-mailto-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="adress-link"><a class="contacts-tel-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>        
@@ -308,25 +308,25 @@
         <div class="join-container">
                 <h2 class="clients-title">ПРИЄДНУЙТЕСЬ</h2>
             <ul class="join-logo">
-                <li class=""><a href="" class="join-item">
+                <li class="footer-svg-item"><a href="" class="join-item">
                 <svg class="join-svg" width="20px" height="20px">
                     <use href="./images/Our_team/team-sprite.svg#icon-instagram">
                     </use>
                 </svg>
                 </a></li>
-                <li class=""><a href="" class="join-item">
+                <li class="footer-svg-item"><a href="" class="join-item">
                 <svg class="join-svg" width="20px" height="20px">
                     <use href="./images/Our_team/team-sprite.svg#icon-twitter">
                     </use>
                 </svg>
                 </a></li>
-                <li class=""><a href="" class="join-item">
+                <li class="footer-svg-item"><a href="" class="join-item">
                 <svg class="join-svg" width="20px" height="20px">
                     <use href="./images/Our_team/team-sprite.svg#icon-facebook">
                     </use>
                 </svg>
                 </a></li>
-                <li class=""><a href="" class="join-item">
+                <li class="footer-svg-item"><a href="" class="join-item">
                 <svg class="join-svg" width="20px" height="20px">
                     <use href="./images/Our_team/team-sprite.svg#icon-linkedin">
                     </use>
@@ -334,13 +334,12 @@
                 </a></li> 
             </ul>
         </div>
-        <div class="join-container" contenteditable="line">
+        <div class="join-container1" contenteditable="line">
             <form class="" autocomplete="off">
-                <h2 class="clients-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
-                <input class="footer-sub" type="email" name="name" id="mail" placeholder="E-mail"/>
-                
+                <h2 class="clients-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>  
             </div>
-            <div>
+            <div class="footer-mailing-wrapper">
+                <input class="footer-sub" type="email" name="name" id="mail" placeholder="E-mail"/>
                 <button class="telegram-container" type="submit">
                     <svg class="telegram-svg" width="200px" height="50px">
                         <use href="./images/footer/telegram-sprite.svg#icon-telegram">
