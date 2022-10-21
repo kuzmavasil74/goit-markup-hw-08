@@ -2454,6 +2454,8 @@ textarea {
     padding-right: 15px;
     padding-left: 15px;
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .botn {
     margin-top: 94px;
