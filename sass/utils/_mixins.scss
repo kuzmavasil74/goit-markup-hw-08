@@ -56,3 +56,28 @@ line-height: $lh;
 letter-spacing: $lp;
 color:$col;
 }
+
+@mixin mobile {
+  @media screen and (max-width:767px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and(min-width:768px) {
+    @content;
+  }
+}
+@mixin desctop {
+  @media screen and(min-width:1200px) {
+    @content;
+  }
+}
+@mixin retina {
+  @media (min-devicepixel-ratio:2), 
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      @content;
+    }
+
+  
+}

@@ -68,7 +68,8 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .team-h {
+    .team-h {outline: none;
+      border: none;
       display: block;
       width: 44px;
       height: 44px;
@@ -188,6 +189,8 @@
       margin-right: auto;
     }
     .team-h {
+      outline: none;
+      border: none;
       display: block;
       width: 44px;
       height: 44px;

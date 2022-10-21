@@ -20,6 +20,7 @@
     letter-spacing: 0.02em;   
 }
 .portfolio-current {
+    outline: none;
 color: #2196f3;
 }
 
@@ -35,6 +36,7 @@ color: #2196f3;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
     }
     .portfolio-current {
+        outline: none;
     color: #2196f3;
     }
     
@@ -58,9 +60,11 @@ color: #2196f3;
 
         }
         .portfolio-current {
+            outline: none;
             color: #2196f3;
             }
         .portfolio-current::after {
+            outline: none;
             content: "";
             position: absolute;
             bottom: -32.5px;

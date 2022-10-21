@@ -11,6 +11,7 @@
     margin: -1px;
 }
 .btn {
+    outline: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -51,6 +52,7 @@
         margin-bottom: 40px;
       }
       .btna {
+        outline: none;
         list-style-type: none;
     
         &:not(:last-child) {
@@ -61,6 +63,7 @@
         }
       }
       .categories-item{
+        outline: none;
         width: 450px;
       }
         .categories-description {
@@ -72,6 +75,7 @@
             flex-basis: calc((100% - 60px) / 3);
         }
         .catego {
+            outline: none;
             display: block;
         &:hover,
         &:focus{
@@ -80,10 +84,14 @@
         }
         }
         .description{
+            outline: none;
             position: relative;
             overflow: hidden;
             &-img{
                 display: block;
+                max-width: 450px;
+                width: 100%;
+              height: 100%;
             }
         }
         .description-product{
@@ -99,10 +107,10 @@
             background-color: $accent-color;
             transition: transform 250ms  $cubic-bezier;
         }
-        .catego:hover .description-product,
-        .catego:focus .description-product{
-            transform:translateY(0%);
-        }
+    .catego:hover .description-product,
+    .catego:focus .description-product{
+        transform:translateY(0%);
+    }
         .description-catego {
             border-right: 1px solid #EEEEEE;
             border-bottom: 1px solid #EEEEEE;
@@ -121,7 +129,7 @@
         }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)and (max-width: 1199px) {
     .botn {
         display: flex;
         flex-direction: row;
@@ -130,18 +138,85 @@
         margin-bottom: 40px;
       }
     .btna {
+        outline: none;
       list-style-type: none;
   
       &:not(:last-child) {
         margin-right: 8px;
       }}
+      .description{
+        outline: none;
+        position: relative;
+        overflow: hidden;
+        &-img{
+            display: block;
+            max-width: 450px;
+            width: 100%;
+          height: 100%;
+        }
     }
+    .categories-item {
+    outline: none;
+    margin-top: 30px;
+    position: relative;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    max-width: 354px;
+    }
+    .categories-description{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .catego{
+        outline: none;
+        display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    &:hover,
+    &:focus{
+        transition: shadow 250ms  $cubic-bezier;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    }
+    .catego:hover .description-product,
+    .catego:focus .description-product{
+        transform:translateY(0%);
+    }
+    .description-product{
+        @include Roboto-400 ($fsz: 18px, $lh: 1.56, $col: $secondary-text-color);
+        position: absolute;
+        overflow: auto;
+        width:100%;   
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 63px 24px;
+        transform: translateY(100%);
+        background-color: $accent-color;
+        transition: transform 250ms  $cubic-bezier;
+    }
+    .description{
+    position: relative;
+    overflow: hidden;
+    }
+    .logo-link, .header-logo, .footer-sub{
+        outline: none;
+    }
+    .adress-map:hover,
+    .adress-map:focus{
+        fill:$accent-color;
+    }
+}
+    
 
 @media screen and (max-width: 1199px){
 
     
 
     .clients-container {
+        
         padding: 60px 15px;
         margin-left: auto;
         margin-right: auto;
@@ -163,29 +238,44 @@
 @media screen and (min-width: 1200px) {
 
     .clients-container {
+        padding-right: 15px;
+        padding-left: 15px;
         width: 1200px;
       }
       .botn {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0;
-        margin-bottom: 40px;
+    margin-top: 94px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-bottom: 50px;
+    justify-content: center;
       }  
+      .btna {
+        outline: none;
+        list-style-type: none;
+    
+        &:not(:last-child) {
+          margin-right: 8px;
+        }
+        &:nth-child(-n + 3) {
+          margin-bottom: 15px;
+        }
+      }
 
 .botn {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 
     &:not(:last-child) {
-        margin-right: 8px;
+        // margin-right: 8px;
         }
     }
     
 .btn {
+    outline: none;
         border: none;
         @include Roboto-500 ($lh: 1.6);
         cursor: pointer;
@@ -213,6 +303,7 @@
         flex-basis: calc((100% - 60px) / 3);
     }
     .catego {
+        outline: none;
         display: block;
     &:hover,
     &:focus{
@@ -221,10 +312,14 @@
     }
     }
     .description{
+        outline: none;
         position: relative;
         overflow: hidden;
         &-img{
-            display: block;
+        display: block;
+        max-width: 450px;
+        width: 100%;
+        height: 100%;
         }
     }
     .description-product{
@@ -260,4 +355,6 @@
                 font-size: 16px;
             }
     }
+    .categories-item{
+    outline: none;}
 }

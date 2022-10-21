@@ -122,6 +122,7 @@ body {
     justify-content: space-between;
   }
   .header__mobile-button {
+    outline: none;
     border: none;
     background: none;
     margin: 0;
@@ -169,6 +170,7 @@ body {
     margin-bottom: 302px;
   }
   .studio {
+    outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -185,6 +187,7 @@ body {
     margin-bottom: 32px;
   }
   .header__contacts-link {
+    outline: none;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
@@ -194,6 +197,7 @@ body {
     margin-bottom: 64px;
   }
   .header__contacts-link.header__phone {
+    outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -211,6 +215,9 @@ body {
     margin-top: auto;
     flex-wrap: wrap;
   }
+  .header__social-network-item {
+    outline: none;
+  }
   .header__social-network-item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -219,6 +226,7 @@ body {
     margin-left: 10px;
   }
   .header__social-network-link {
+    outline: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -241,6 +249,13 @@ body {
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .header__contacts-link {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__contacts-link:hover, .header__contacts-link:focus {
+    fill: #2196f3;
+    text-decoration: none;
   }
   .our-clients__client-item {
     margin-left: 30px;
@@ -280,6 +295,7 @@ body {
   }
   .header__mobile-button {
     display: none;
+    outline: none;
   }
   .header__close-button {
     display: none;
@@ -295,6 +311,7 @@ body {
     margin-right: 50px;
   }
   .studio {
+    outline: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -308,6 +325,7 @@ body {
   }
   .header__contacts-link.header__phone,
 .header__contacts-link {
+    outline: none;
     text-decoration: none;
     color: #757575;
     font-weight: 500;
@@ -328,6 +346,9 @@ body {
     margin-top: auto;
     flex-wrap: wrap;
   }
+  .header__social-network-item {
+    outline: none;
+  }
   .header__social-network-item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -336,6 +357,7 @@ body {
     margin-left: 10px;
   }
   .header__social-network-link {
+    outline: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -433,6 +455,7 @@ body {
   }
   .header__mobile-button {
     display: none;
+    outline: none;
   }
   .header__close-button {
     display: none;
@@ -464,6 +487,7 @@ body {
     border-radius: 2px;
   }
   .studio {
+    outline: none;
     position: relative;
     font-family: Roboto;
     font-style: normal;
@@ -485,6 +509,7 @@ body {
   }
   .header__contacts-link.header__phone,
 .header__contacts-link {
+    outline: none;
     text-decoration: none;
     color: #757575;
     font-weight: 500;
@@ -506,6 +531,9 @@ body {
     flex-direction: row;
     align-items: center;
   }
+  .header__social-network-item {
+    outline: none;
+  }
   .header__social-network-item:not(:last-child) {
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -514,6 +542,7 @@ body {
     margin-left: 10px;
   }
   .header__social-network-link {
+    outline: none;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
@@ -542,6 +571,7 @@ body {
   }
 }
 .button {
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -713,11 +743,11 @@ textarea {
     color: #757575;
   }
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-mobile\ .svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-1x.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 480px;
+    width: 100%;
     height: 400px;
     background-color: #2f303a;
     padding-bottom: 200px;
@@ -851,10 +881,10 @@ textarea {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-tablet.svg);
-    width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-2x.jpeg);
+    width: 100%;
     height: 400px;
     background-repeat: no-repeat;
     background-position: center;
@@ -993,18 +1023,17 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img\ .svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-3x.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #2f303a;
     padding-bottom: 200px;
-    padding-top: 200px;
   }
   .hero-titles {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     width: 600px;
     text-align: center;
     font-family: "Roboto";
@@ -1279,6 +1308,8 @@ textarea {
     margin-right: auto;
   }
   .team-h {
+    outline: none;
+    border: none;
     display: block;
     width: 44px;
     height: 44px;
@@ -1387,6 +1418,8 @@ textarea {
     margin-right: auto;
   }
   .team-h {
+    outline: none;
+    border: none;
     display: block;
     width: 44px;
     height: 44px;
@@ -1480,6 +1513,7 @@ textarea {
     flex-basis: calc((100% - 60px) / 2);
   }
   .customers-li {
+    outline: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1523,6 +1557,7 @@ textarea {
     max-width: 226px;
   }
   .customers-li {
+    outline: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1574,6 +1609,7 @@ textarea {
   }
 }
 .join-item {
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1597,6 +1633,7 @@ textarea {
 }
 
 .footer-sub:focus {
+  outline: none;
   border-color: #2196f3;
 }
 
@@ -1615,6 +1652,7 @@ textarea {
 }
 
 .telegram-container {
+  outline: none;
   margin-top: 48px;
   margin-left: 12px;
   width: 200px;
@@ -1686,12 +1724,16 @@ textarea {
     color: #ffffff;
   }
   .adress-map {
+    outline: none;
     margin-bottom: 10px;
     font-style: normal;
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
     letter-spacing: 0.03em;
+  }
+  .adress-map:focus, .adress-map:hover {
+    color: #2196f3;
   }
   .contacts-mailto-footer,
 .contacts-tel-footer,
@@ -1704,13 +1746,16 @@ textarea {
 .contacts-mailto-footer:focus,
 .contacts-tel-footer:focus,
 .contacts-mailto-footer:hover {
-    color: rgba(255, 255, 255, 0.6);
+    color: #2196f3;
   }
   .adress-contacts {
+    outline: none;
     margin-top: 8px;
     padding: 0;
   }
   .adress-link {
+    outline: none;
+    outline: none;
     list-style-type: none;
     height: 16px;
   }
@@ -1725,6 +1770,7 @@ textarea {
     flex-direction: column;
   }
   .footer-sub {
+    outline: none;
     color: white;
     width: 450px;
     height: 50px;
@@ -1764,6 +1810,7 @@ textarea {
   }
   .contacts-mailto-footer,
 .contacts-tel-footer {
+    outline: none;
     text-decoration: none;
     color: #757575;
     font-weight: 500;
@@ -1780,6 +1827,7 @@ textarea {
     justify-content: space-around;
   }
   .logo-link {
+    outline: none;
     margin-bottom: 20px;
   }
   .header__contacts-item {
@@ -1828,6 +1876,7 @@ textarea {
     align-items: center;
   }
   .adress-map {
+    outline: none;
     margin-top: 20px;
     margin-bottom: 0px;
     font-style: normal;
@@ -1836,10 +1885,14 @@ textarea {
     color: #ffffff;
     letter-spacing: 0.03em;
   }
+  .adress-map:focus, .adress-map:hover {
+    color: #2196f3;
+  }
   .contacts-mailto-footer,
 .contacts-tel-footer,
 .contacts-mailto-footer,
 .contacts-tel-footer {
+    outline: none;
     color: rgba(255, 255, 255, 0.6);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1847,9 +1900,11 @@ textarea {
 .contacts-mailto-footer:focus,
 .contacts-tel-footer:focus,
 .contacts-mailto-footer:hover {
-    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    color: #2196f3;
   }
   .adress-contacts {
+    outline: none;
     margin-top: 35px;
     padding: 0;
   }
@@ -1861,6 +1916,7 @@ textarea {
     margin-top: 8px;
   }
   .footer-sub {
+    outline: none;
     color: white;
     width: 450px;
     height: 50px;
@@ -1876,6 +1932,7 @@ textarea {
   }
   .contacts-mailto-footer,
 .contacts-tel-footer {
+    outline: none;
     text-decoration: none;
     color: #757575;
     font-weight: 500;
@@ -1995,6 +2052,7 @@ textarea {
     color: #ffffff;
   }
   .adress-map {
+    outline: none;
     margin: 0;
     font-style: normal;
     font-size: 14px;
@@ -2018,10 +2076,12 @@ textarea {
     color: #2196f3;
   }
   .adress-contacts {
+    outline: none;
     margin-top: 9px;
     padding: 0;
   }
   .adress-link {
+    outline: none;
     list-style-type: none;
   }
   .adress-link:last-child {
@@ -2067,6 +2127,7 @@ textarea {
     justify-content: center;
   }
   .logo-link {
+    outline: none;
     margin-bottom: 20px;
   }
 }
@@ -2092,6 +2153,7 @@ textarea {
     letter-spacing: 0.02em;
   }
   .portfolio-current {
+    outline: none;
     color: #2196f3;
   }
 }
@@ -2105,6 +2167,7 @@ textarea {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .portfolio-current {
+    outline: none;
     color: #2196f3;
   }
 }
@@ -2121,9 +2184,11 @@ textarea {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .portfolio-current {
+    outline: none;
     color: #2196f3;
   }
   .portfolio-current::after {
+    outline: none;
     content: "";
     position: absolute;
     bottom: -32.5px;
@@ -2150,6 +2215,7 @@ textarea {
 }
 
 .btn {
+  outline: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -2187,6 +2253,7 @@ textarea {
     margin-bottom: 40px;
   }
   .btna {
+    outline: none;
     list-style-type: none;
   }
   .btna:not(:last-child) {
@@ -2196,6 +2263,7 @@ textarea {
     margin-bottom: 15px;
   }
   .categories-item {
+    outline: none;
     width: 450px;
   }
   .categories-description {
@@ -2209,6 +2277,7 @@ textarea {
     flex-basis: calc((100% - 60px) / 3);
   }
   .catego {
+    outline: none;
     display: block;
   }
   .catego:hover, .catego:focus {
@@ -2216,11 +2285,15 @@ textarea {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   .description {
+    outline: none;
     position: relative;
     overflow: hidden;
   }
   .description-img {
     display: block;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
   }
   .description-product {
     font-family: "Roboto";
@@ -2275,7 +2348,7 @@ textarea {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .botn {
     display: flex;
     flex-direction: row;
@@ -2284,10 +2357,80 @@ textarea {
     margin-bottom: 40px;
   }
   .btna {
+    outline: none;
     list-style-type: none;
   }
   .btna:not(:last-child) {
     margin-right: 8px;
+  }
+  .description {
+    outline: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .description-img {
+    display: block;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
+  }
+  .categories-item {
+    outline: none;
+    margin-top: 30px;
+    position: relative;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    max-width: 354px;
+  }
+  .categories-description {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  .catego {
+    outline: none;
+    display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .catego:hover, .catego:focus {
+    transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .catego:hover .description-product,
+.catego:focus .description-product {
+    transform: translateY(0%);
+  }
+  .description-product {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    position: absolute;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    background-color: #2196f3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .description {
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-link, .header-logo, .footer-sub {
+    outline: none;
+  }
+  .adress-map:hover,
+.adress-map:focus {
+    fill: #2196f3;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -2302,26 +2445,37 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .clients-container {
+    padding-right: 15px;
+    padding-left: 15px;
     width: 1200px;
   }
   .botn {
+    margin-top: 94px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .btna {
+    outline: none;
+    list-style-type: none;
+  }
+  .btna:not(:last-child) {
+    margin-right: 8px;
+  }
+  .btna:nth-child(-n+3) {
+    margin-bottom: 15px;
   }
   .botn {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
-    margin-bottom: 40px;
-  }
-  .botn:not(:last-child) {
-    margin-right: 8px;
+    margin-bottom: 50px;
   }
   .btn {
+    outline: none;
     border: none;
     font-family: "Roboto";
     font-style: normal;
@@ -2357,6 +2511,7 @@ textarea {
     flex-basis: calc((100% - 60px) / 3);
   }
   .catego {
+    outline: none;
     display: block;
   }
   .catego:hover, .catego:focus {
@@ -2364,11 +2519,15 @@ textarea {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   .description {
+    outline: none;
     position: relative;
     overflow: hidden;
   }
   .description-img {
     display: block;
+    max-width: 450px;
+    width: 100%;
+    height: 100%;
   }
   .description-product {
     font-family: "Roboto";
@@ -2421,5 +2580,8 @@ textarea {
     color: #757575;
     margin: 0px;
     font-size: 16px;
+  }
+  .categories-item {
+    outline: none;
   }
 }/*# sourceMappingURL=main.css.map */
