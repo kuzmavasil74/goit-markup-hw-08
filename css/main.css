@@ -743,6 +743,7 @@ textarea {
     color: #757575;
   }
   .hero {
+    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(/images/Headeer/slider-img-mob-1x.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -755,7 +756,7 @@ textarea {
 }
 @media screen and (max-width: 767px) and (min-devicepixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-mobile\ .svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/slider-img-mob-2x.jpeg);
   }
 }
 @media screen and (max-width: 767px) {
@@ -889,6 +890,7 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero {
+    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(/images/Headeer/slider-img-tab-1x.jpeg);
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -901,7 +903,7 @@ textarea {
 }
 @media screen and (min-width: 768px) and (min-devicepixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img-tablet.svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/slider-img-tab-2x.jpeg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1035,6 +1037,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(/images/Headeer/slider-img-desc-1x.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1044,7 +1047,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) and (min-devicepixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-img\ .svg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/slider-img-desc-2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
