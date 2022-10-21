@@ -889,7 +889,6 @@ textarea {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-2x.jpeg);
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -899,6 +898,13 @@ textarea {
     padding-bottom: 200px;
     padding-top: 118px;
   }
+}
+@media screen and (min-width: 768px) and (min-devicepixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-1x.jpeg);
+  }
+}
+@media screen and (min-width: 768px) {
   .hero-titles {
     margin-right: auto;
     margin-left: auto;
@@ -1029,13 +1035,19 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-3x.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-color: #2f303a;
     padding-bottom: 200px;
   }
+}
+@media screen and (min-width: 1200px) and (min-devicepixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-1x.jpeg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero-titles {
     margin-right: auto;
     margin-left: auto;
