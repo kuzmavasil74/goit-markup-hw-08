@@ -139,7 +139,10 @@ textarea{resize: none;}
         @include Roboto-400 ($fsz: 12px, $lh: 1.17, $lp: 0.01em);
       }
     .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/Headeer/Header\ img-1x.jpeg);
+        @include retina {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+             rgba(47, 48, 58, 0.4)),
+             url(/images/Headeer/Header\ img-1x.jpeg);}
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
