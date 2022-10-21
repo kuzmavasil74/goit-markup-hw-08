@@ -139,10 +139,12 @@ textarea{resize: none;}
         @include Roboto-400 ($fsz: 12px, $lh: 1.17, $lp: 0.01em);
       }
     .hero {
-        @include retina {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-             rgba(47, 48, 58, 0.4)),
-             url(/images/Headeer/Header\ img-1x.jpeg);}
+        @media (min-devicepixel-ratio:2), 
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx)
+                {background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(/images/Headeer/Header\ img-1x.jpeg);}
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -254,10 +256,12 @@ textarea{resize: none;}
 @include tablet{
     
     .hero {
-        @include retina {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-             rgba(47, 48, 58, 0.4)),
-             url(/images/Headeer/Header\ img-1x.jpeg);}
+        @media (min-devicepixel-ratio:2), 
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx)
+                {background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(/images/Headeer/Header\ img-1x.jpeg);}
         width: 100%;
         height: 400px;
         background-repeat: no-repeat;
@@ -375,10 +379,12 @@ textarea{resize: none;}
 
 @include desctop {
     .hero {
-        @include retina {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-             rgba(47, 48, 58, 0.4)),
-             url(/images/Headeer/Header\ img-1x.jpeg);}
+        @media (min-devicepixel-ratio:2), 
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx)
+                {background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(/images/Headeer/Header\ img-1x.jpeg);}
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
