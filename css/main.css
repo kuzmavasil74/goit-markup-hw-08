@@ -2262,7 +2262,6 @@ textarea {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-container {
     max-width: 480px;
-    padding: 60px 15px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -2370,12 +2369,35 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .description-catego-categories {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .description-catego-descr {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
   .botn {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
     margin-bottom: 40px;
+  }
+  .description-catego {
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
   }
   .btna {
     outline: none;
