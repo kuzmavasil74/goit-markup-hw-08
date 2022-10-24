@@ -148,6 +148,10 @@
     .preference-list:not(:last-child) {
       margin-right: 30px;
     }
+    .preference-sec {
+      margin: 0 auto;
+      padding: 94px 0;
+    }
   }
   
   @media screen and (max-width: 1200px) {

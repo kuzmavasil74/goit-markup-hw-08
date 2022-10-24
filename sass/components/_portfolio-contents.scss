@@ -37,8 +37,8 @@
     }
   }
 @media screen and (min-width: 480px) and (max-width: 767px){
-    .clients-container {
-        max-width: 480px;
+    .clients-container-p {
+       
         margin-left: auto;
         margin-right: auto;
       } 
@@ -222,13 +222,13 @@
 
     
 
-    .clients-container {
+    .clients-container-p {
         
-        padding: 60px 15px;
+    
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        align-items: center;
+     
         flex-direction: column;
       }
 
@@ -244,7 +244,7 @@
 
 @media screen and (min-width: 1200px) {
 
-    .clients-container {
+    .clients-container-p {
         padding-right: 15px;
         padding-left: 15px;
         width: 1200px;
@@ -278,9 +278,6 @@
     padding: 0;
     margin-bottom: 50px;
 
-    &:not(:last-child) {
-        // margin-right: 8px;
-        }
     }
     
 .btn {

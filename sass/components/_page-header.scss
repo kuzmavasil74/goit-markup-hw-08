@@ -13,6 +13,7 @@
     }
     .nav-contacts{
 margin-bottom: 64px;
+margin-top: 200px;
     }
     body {
       max-width: 768px;
@@ -81,14 +82,20 @@ margin-bottom: 64px;
     opacity: 0;
   }
   .header__mobile-menu.is-open {
+    max-height: 796px;
     opacity: 100%;
     transform: translateY(0);
   }
   .header-item:not(:last-child) {
     margin-bottom: 35px;
   }
-  .nav-header {
-    margin-bottom: 302px;
+  // .nav-header {
+  //   margin-bottom: 302px;
+  // }
+  .header__social {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 234px;
   }
   .studio {
     outline: none;
@@ -250,6 +257,7 @@ margin-bottom: 64px;
         }
       }
       .studio {
+        position: relative;
         outline: none;
         font-family: Roboto;
         font-style: normal;
@@ -263,8 +271,20 @@ margin-bottom: 64px;
           text-decoration: none;
         }
       }
+      .current::after {
+        content: "";
+    position: absolute;
+    bottom: -32px;
+    left: -5px;
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    }
       .header__contacts-link.header__phone,
       .header__contacts-link {
+        margin-top: 10px;
         outline: none;
         text-decoration: none;
         color: #757575;
@@ -318,7 +338,7 @@ margin-bottom: 64px;
 
 
 
-    @media screen and (min-width: 769px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       .header__container {
         display: flex;
         justify-content: center;
@@ -338,7 +358,7 @@ margin-bottom: 64px;
       }
       .icon-mail {
         position: absolute;
-        top: 7px;
+        top: 12px;
         left: -25px;
         margin-right: 10px;
         width: 16px;
@@ -348,7 +368,7 @@ margin-bottom: 64px;
       }
       .icon-smartphone {
         position: absolute;
-        top: 5px;
+        top: 10px;
         left: -25px;
         margin-right: 10px;
         width: 10px;
@@ -514,7 +534,7 @@ margin-bottom: 64px;
       }
       .icon-mail {
         position: absolute;
-        top: 5px;
+        top: 13px;
         left: -25px;
         margin-right: 10px;
         width: 16px;
@@ -524,7 +544,7 @@ margin-bottom: 64px;
       }
      .icon-smartphone {
         position: absolute;
-        top: 3px;
+        top: 10px;
         left: -20px;
         margin-right: 10px;
         width: 10px;
