@@ -5,18 +5,18 @@
 
 
   @media screen and (max-width: 767px) {
+    .nav-contacts{
+      margin-top: 190px;
+      display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          }
     .icon-mail {
+      
       display: none;
     }
     .icon-smartphone {
       display: none;
-    }
-    .nav-contacts{
-margin-bottom: 64px;
-margin-top: 200px;
-display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
     }
     body {
       max-width: 768px;
@@ -69,6 +69,9 @@ display: flex;
         color: $accent-color;
       }
   .header__mobile-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     position: fixed;
     overflow-y: scroll;
     z-index: 99;
@@ -93,8 +96,14 @@ display: flex;
     margin-bottom: 35px;
   }
   // .nav-header {
-  //   margin-bottom: 302px;
+  //   padding-right: 100px;
   // }
+  .cont{
+    padding-right: 100px;
+  }
+  .head{
+    padding-right: 200px;
+  }
   .header__social {
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +154,7 @@ display: flex;
   }
   .header__social-network-list {
     display: flex;
-    margin-top: auto;
+    margin-top: 64px;
     flex-wrap: wrap;
   }
   .header__social-network-item {
@@ -193,6 +202,11 @@ display: flex;
       padding-right: 15px;
       padding-left: 15px;
     }
+    .nav-contacts{
+      display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          }
     .header__contacts-link{
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover,
@@ -287,7 +301,6 @@ display: flex;
     }
       .header__contacts-link.header__phone,
       .header__contacts-link {
-        margin-top: 10px;
         outline: none;
         text-decoration: none;
         color: #757575;
@@ -335,6 +348,7 @@ display: flex;
       .header__navigation {
         display: flex;
         padding-right: 0px;
+        justify-content: center;
       }
     }
 
@@ -361,7 +375,7 @@ display: flex;
       }
       .icon-mail {
         position: absolute;
-        top: 12px;
+        top: 5px;
         left: -25px;
         margin-right: 10px;
         width: 16px;
@@ -371,7 +385,7 @@ display: flex;
       }
       .icon-smartphone {
         position: absolute;
-        top: 10px;
+        top: 3px;
         left: -25px;
         margin-right: 10px;
         width: 10px;
@@ -382,6 +396,7 @@ display: flex;
       .nav-contacts {
         height: 80px;
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;
         margin-left: 21px;
