@@ -62,7 +62,10 @@
 
 
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers{
+    padding: 0px
+  }}
   
   @media screen and (max-width: 767px) {
     .customers{
@@ -127,9 +130,6 @@
     }
     .client-item:nth-child(2n+1){
       margin-right: 0px;
-    }
-    .customers{
-      padding: 60px 15px;
     }
     .portfolio-section {
       font-size: 36px;

@@ -20,6 +20,7 @@
             cursor: pointer;
             transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;}
 }
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -130,53 +131,28 @@ textarea{resize: none;}
     transition: color 250ms  $cubic-bezier;
     }
 }
-@media screen and (min-width:320px) and (max-width:459px) {
-    .button-close{
+@media screen and (min-width:320px) and (max-width:479px) {
+    
+    .checkbox-send{
         outline: none;
         position: absolute;
-        width: 30px;
-        height: 30px;
-        left: 88%;
-        top: 2%;
-        border-radius: 50%;
-        box-sizing: border-box;
-        background: #FFFFFF;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        fill: $header-logo-color;
-        align-items: center; 
-        &-svg{
-            position: absolute; 
-            top: 0px;  
-            right: 0px;  
-             }
-        &:focus,
-        &:hover{
-                fill:$accent-color;
-                cursor: pointer;
-                transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;
-             } } 
-             .checkbox-send{
-                outline: none;
-                position: absolute;
-                top: 95%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 200px;
-                height: 50px;
-                background: $accent-color;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                border-radius: 4px;
-                border: none;
-                color: $secondary-text-color;
-                transition: box-shadow 250ms  $cubic-bezier, background 250ms  $cubic-bezier, color 250ms  $cubic-bezier;
-            &:focus{
-                background: #188CE8;
-                cursor: pointer;
-                transition: background 250ms  $cubic-bezier;
-                }
-            }        }
-@media screen and (min-width:360px) and (max-width:449px) {
-    .button-close{
+        top: 91%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 50px;
+        background: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        color: $secondary-text-color;
+        transition: box-shadow 250ms  $cubic-bezier, background 250ms  $cubic-bezier, color 250ms  $cubic-bezier;
+    &:focus{
+        background: #188CE8;
+        cursor: pointer;
+        transition: background 250ms  $cubic-bezier;
+        }
+    } .button-close{
         outline: none;
         position: absolute;
         width: 30px;
@@ -200,104 +176,86 @@ textarea{resize: none;}
                 cursor: pointer;
                 transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;
              } } 
-             .checkbox-send{
-                outline: none;
-                position: absolute;
-                top: 95%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 200px;
-                height: 50px;
-                background: $accent-color;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                border-radius: 4px;
-                border: none;
-                color: $secondary-text-color;
-                transition: box-shadow 250ms  $cubic-bezier, background 250ms  $cubic-bezier, color 250ms  $cubic-bezier;
-            &:focus{
-                background: #188CE8;
-                cursor: pointer;
-                transition: background 250ms  $cubic-bezier;
-                }
-            }        }
-               
-
-@media screen and (min-width:450px) and (max-width:499px) {
-    .button-close{
-        outline: none;
+        .coment{
+            @include Roboto-400 ($fsz: 12px, $lh: 1.17, $lp: 0.01em);
+          }
+        .hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-mob-1x.jpeg);
+            @media (min-devicepixel-ratio:2), 
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx)
+                    {background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../images/Headeer/slider-img-mob-2x.jpeg);}
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 400px;
+            background-color: $background-color;
+            padding-bottom: 200px;
+            padding-top: 118px;
+            &-titles {
+                text-align: center;
+                @include Roboto-900 ( $fsz: 26px, $lh: 1.62); 
+                margin-bottom: 30px;
+            }
+        }
+    .modal{
         position: absolute;
-        width: 30px;
-        height: 30px;
-        left: 90%;
-        top: 2%;
-        border-radius: 50%;
-        box-sizing: border-box;
-        background: #FFFFFF;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        fill: $header-logo-color;
-        align-items: center; 
-        &-svg{
-            position: absolute; 
-            top: 0px;  
-            right: 0px;  
-             }
-        &:focus,
-        &:hover{
-                fill:$accent-color;
-                cursor: pointer;
-                transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;
-             } } 
-             .checkbox-send{
-                outline: none;
-                position: absolute;
-                top: 95%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 200px;
-                height: 50px;
-                background: $accent-color;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                border-radius: 4px;
-                border: none;
-                color: $secondary-text-color;
-                transition: box-shadow 250ms  $cubic-bezier, background 250ms  $cubic-bezier, color 250ms  $cubic-bezier;
-            &:focus{
-                background: #188CE8;
-                cursor: pointer;
-                transition: background 250ms  $cubic-bezier;
-                }
-            }        }
-               
-
-@media screen and (min-width:500px) and (max-width:522px) {
-    .button-close{
-        outline: none;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        left: 91%;
-        top: 2%;
-        border-radius: 50%;
-        box-sizing: border-box;
-        background: #FFFFFF;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        fill: $header-logo-color;
-        align-items: center; 
-        &-svg{
-            position: absolute; 
-            top: 0px;  
-            right: 0px;  
-             }
-        &:focus,
-        &:hover{
-                fill:$accent-color;
-                cursor: pointer;
-                transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;
-             } } 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        width: 90%;
+        height: 90%;
+        background-color: $secondary-text-color;
+        border-radius: 4px;
+        transition:  background-color 250ms  $cubic-bezier;
+        &:hover,
+    &:focus{
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        transition: box-shadow 250ms  $cubic-bezier;}
+    }
+        .modal-title{
+            position: relative;
+            display: block;
+            @include Roboto-700 ($fsz: 20px, $lh: 1.5, $lp: 0.03em, $col: $title-text-color);
+            text-align: center;
+            width: 100%;
+            margin-bottom: 12px;
+            margin-top: 10px;
+            transition: color 250ms  $cubic-bezier; 
+        }
+        .modal-coment{
+            margin-bottom: 20px;
+            outline: none;
+            width: 100%;
+            margin-top: 4px;
+            padding: 12px 14px;
+            @include Roboto-400 ( $fsz: 14px, $lh: 1.14, $lp: 0.01em, $col:rgba(117, 117, 117, 0.5));
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            transition: color 250ms  $cubic-bezier, border 250ms  $cubic-bezier;
+        
+        &:focus{
+            border-color: $accent-color;
+            transition: border-color 250ms  $cubic-bezier;
+        }}
+        .lable-send{
+            position: relative;
+            margin-left: 22px;
+            @include Roboto-400 ($fsz: 12px, $lh: 1.17);}
+    
+       
+}
+@media screen and (min-width:480px) and (max-width:767px) {
+    
     .checkbox-send{
         outline: none;
         position: absolute;
-        top: 95%;
+        top: 91%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 200px;
@@ -313,10 +271,7 @@ textarea{resize: none;}
         cursor: pointer;
         transition: background 250ms  $cubic-bezier;
         }
-    }        
-}
-@media screen and (min-width:523px) and (max-width:767px) {
-    .button-close{
+    } .button-close{
         outline: none;
         position: absolute;
         width: 30px;
@@ -340,31 +295,6 @@ textarea{resize: none;}
                 cursor: pointer;
                 transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;
              } } 
-    .checkbox-send{
-        outline: none;
-        position: absolute;
-        top: 91%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 200px;
-        height: 50px;
-        background: $accent-color;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        border: none;
-        color: $secondary-text-color;
-        transition: box-shadow 250ms  $cubic-bezier, background 250ms  $cubic-bezier, color 250ms  $cubic-bezier;
-    &:focus{
-        background: #188CE8;
-        cursor: pointer;
-        transition: background 250ms  $cubic-bezier;
-        }
-    }        
-}
-@include mobile{
-    .modal{
-        max-width: 93%;
-    }
     .coment{
         @include Roboto-400 ($fsz: 12px, $lh: 1.17, $lp: 0.01em);
       }
@@ -390,7 +320,6 @@ textarea{resize: none;}
             margin-bottom: 30px;
         }
     }
-}
 .modal{
     position: absolute;
     top: 50%;
@@ -437,7 +366,7 @@ textarea{resize: none;}
     .lable-send{
         position: relative;
         margin-left: 22px;
-        @include Roboto-400 ($fsz: 12px, $lh: 1.17);}
+        @include Roboto-400 ($fsz: 12px, $lh: 1.17);}}
 
 
 @include tablet{
@@ -465,7 +394,7 @@ textarea{resize: none;}
             text-align: center;
             @include Roboto-900 ( $fsz: 26px, $lh: 1.62); 
             text-transform: uppercase;
-        }
+        }}
         .checkbox-send{
             outline: none;
             position: absolute;
@@ -485,7 +414,7 @@ textarea{resize: none;}
             cursor: pointer;
             transition: background 250ms  $cubic-bezier;
             }
-        } }
+        } 
         .button-close{
             outline: none;
             position: absolute;
@@ -509,8 +438,7 @@ textarea{resize: none;}
                     fill:$accent-color;
                     cursor: pointer;
                     transition: fill 250ms  $cubic-bezier, border-color 250ms  $cubic-bezier;
-                 } } 
-}    
+                 } }    
     .modal{
         position: absolute;
         top: 50%;
@@ -560,7 +488,7 @@ textarea{resize: none;}
             @include Roboto-400 ($fsz: 14px, $lh: 1.7);}    
              
 
- 
+}
 @include desctop {
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-desc-1x.jpeg);

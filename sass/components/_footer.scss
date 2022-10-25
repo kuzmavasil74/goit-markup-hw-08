@@ -269,7 +269,7 @@
       display: flex;
       flex-direction: column;
   
-      align-items: center;
+      align-items: flex-start;
     }
   
     .adress-map {
@@ -542,6 +542,6 @@
     }
     .logo-link{
       outline: none;
-        margin-bottom: 20px;
+      margin-bottom: 0px;
     }
   }

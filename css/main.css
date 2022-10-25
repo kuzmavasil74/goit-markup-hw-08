@@ -94,6 +94,9 @@ body {
   .nav-contacts {
     margin-bottom: 64px;
     margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
   body {
     max-width: 768px;
@@ -187,7 +190,7 @@ body {
     text-decoration: none;
     color: #2196f3;
   }
-  .header__contacts-item:first-child {
+  .header__contacts-item:last-child {
     margin-bottom: 32px;
   }
   .header__contacts-link {
@@ -435,6 +438,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 21px;
   }
   .header__contacts-list {
     height: 80px;
@@ -526,6 +530,7 @@ body {
   }
   .header__contacts-link.header__phone,
 .header__contacts-link {
+    margin-top: 0px;
     outline: none;
     text-decoration: none;
     color: #757575;
@@ -568,7 +573,7 @@ body {
   }
   .icon-mail {
     position: absolute;
-    top: 13px;
+    top: 5px;
     left: -25px;
     margin-right: 10px;
     width: 16px;
@@ -578,7 +583,7 @@ body {
   }
   .icon-smartphone {
     position: absolute;
-    top: 10px;
+    top: 1px;
     left: -20px;
     margin-right: 10px;
     width: 10px;
@@ -749,35 +754,11 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 320px) and (max-width: 459px) {
-  .button-close {
-    outline: none;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 88%;
-    top: 2%;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    fill: #000000;
-    align-items: center;
-  }
-  .button-close-svg {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  }
-  .button-close:focus, .button-close:hover {
-    fill: #2196f3;
-    cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .checkbox-send {
     outline: none;
     position: absolute;
-    top: 95%;
+    top: 91%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
@@ -794,8 +775,6 @@ textarea {
     cursor: pointer;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-@media screen and (min-width: 360px) and (max-width: 449px) {
   .button-close {
     outline: none;
     position: absolute;
@@ -820,10 +799,123 @@ textarea {
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .coment {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-mob-1x.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-color: #2f303a;
+    padding-bottom: 200px;
+    padding-top: 118px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) and (min-devicepixel-ratio: 2), screen and (min-width: 320px) and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 479px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 479px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Headeer/slider-img-mob-2x.jpeg);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .hero-titles {
+    text-align: center;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal:hover, .modal:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal-title {
+    position: relative;
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal-coment {
+    margin-bottom: 20px;
+    outline: none;
+    width: 100%;
+    margin-top: 4px;
+    padding: 12px 14px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-coment:focus {
+    border-color: #2196f3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .lable-send {
+    position: relative;
+    margin-left: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .checkbox-send {
     outline: none;
     position: absolute;
-    top: 95%;
+    top: 91%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
@@ -840,100 +932,6 @@ textarea {
     cursor: pointer;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
-@media screen and (min-width: 450px) and (max-width: 499px) {
-  .button-close {
-    outline: none;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 90%;
-    top: 2%;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    fill: #000000;
-    align-items: center;
-  }
-  .button-close-svg {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  }
-  .button-close:focus, .button-close:hover {
-    fill: #2196f3;
-    cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .checkbox-send {
-    outline: none;
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    color: #ffffff;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .checkbox-send:focus {
-    background: #188CE8;
-    cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-@media screen and (min-width: 500px) and (max-width: 522px) {
-  .button-close {
-    outline: none;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 91%;
-    top: 2%;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    fill: #000000;
-    align-items: center;
-  }
-  .button-close-svg {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-  }
-  .button-close:focus, .button-close:hover {
-    fill: #2196f3;
-    cursor: pointer;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .checkbox-send {
-    outline: none;
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    color: #ffffff;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .checkbox-send:focus {
-    background: #188CE8;
-    cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-@media screen and (min-width: 523px) and (max-width: 767px) {
   .button-close {
     outline: none;
     position: absolute;
@@ -958,31 +956,6 @@ textarea {
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .checkbox-send {
-    outline: none;
-    position: absolute;
-    top: 91%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 50px;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    color: #ffffff;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .checkbox-send:focus {
-    background: #188CE8;
-    cursor: pointer;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-@media screen and (max-width: 767px) {
-  .modal {
-    max-width: 93%;
-  }
   .coment {
     font-family: "Roboto";
     font-style: normal;
@@ -1004,12 +977,12 @@ textarea {
     padding-top: 118px;
   }
 }
-@media screen and (max-width: 767px) and (min-devicepixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-devicepixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Headeer/slider-img-mob-2x.jpeg);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero-titles {
     text-align: center;
     font-family: "Roboto";
@@ -1022,76 +995,80 @@ textarea {
     margin-bottom: 30px;
   }
 }
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  width: 450px;
-  height: 609px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 450px;
+    height: 609px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal:hover, .modal:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.modal:hover, .modal:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal-title {
+    position: relative;
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
-.modal-title {
-  position: relative;
-  display: block;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: #212121;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 12px;
-  margin-top: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modal-coment {
+    margin-bottom: 20px;
+    outline: none;
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 14px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-coment:focus {
+    border-color: #2196f3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
-.modal-coment {
-  margin-bottom: 20px;
-  outline: none;
-  width: 100%;
-  height: 120px;
-  margin-top: 4px;
-  padding: 12px 14px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .lable-send {
+    position: relative;
+    margin-left: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
-.modal-coment:focus {
-  border-color: #2196f3;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.lable-send {
-  position: relative;
-  margin-left: 22px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-tab-1x.jpeg);
@@ -1127,7 +1104,7 @@ textarea {
   }
 }
 @media screen and (min-width: 768px) {
-  .hero .checkbox-send {
+  .checkbox-send {
     outline: none;
     position: absolute;
     top: 91%;
@@ -1142,7 +1119,7 @@ textarea {
     color: #ffffff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .hero .checkbox-send:focus {
+  .checkbox-send:focus {
     background: #188CE8;
     cursor: pointer;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1174,76 +1151,80 @@ textarea {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  width: 528px;
-  height: 581px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal:hover, .modal:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.modal:hover, .modal:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .modal-title {
+    position: relative;
+    display: block;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
-.modal-title {
-  position: relative;
-  display: block;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  color: #212121;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 12px;
-  margin-top: 10px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .modal-coment {
+    margin-bottom: 20px;
+    outline: none;
+    width: 100%;
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 14px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-coment:focus {
+    border-color: #2196f3;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-
-.modal-coment {
-  margin-bottom: 20px;
-  outline: none;
-  width: 100%;
-  height: 120px;
-  margin-top: 4px;
-  padding: 12px 14px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 768px) {
+  .lable-send {
+    position: relative;
+    margin-left: 22px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
-.modal-coment:focus {
-  border-color: #2196f3;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.lable-send {
-  position: relative;
-  margin-left: 22px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-desc-1x.jpeg);
@@ -1284,7 +1265,6 @@ textarea {
     padding: 60px 15px;
   }
   .preference-sprite {
-    -ms-grid-row-align: center;
     align-self: center;
     width: 70px;
     height: 70px;
@@ -1302,7 +1282,9 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 738px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .preference-details {
     text-align: center;
@@ -1315,7 +1297,7 @@ textarea {
   }
   .preference-list {
     max-width: 738px;
-    min-width: 300px;
+    min-width: 290px;
   }
   .preference-list:not(:first-child) {
     margin-top: 30px;
@@ -1336,7 +1318,6 @@ textarea {
     padding: 60px 0;
   }
   .preference-sprite {
-    -ms-grid-row-align: center;
     align-self: center;
     width: 70px;
     height: 70px;
@@ -1792,6 +1773,11 @@ textarea {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers {
+    padding: 0px;
+  }
+}
 @media screen and (max-width: 767px) {
   .customers {
     padding: 60px 15px;
@@ -1848,9 +1834,6 @@ textarea {
   }
   .client-item:nth-child(2n+1) {
     margin-right: 0px;
-  }
-  .customers {
-    padding: 60px 15px;
   }
   .portfolio-section {
     font-size: 36px;
@@ -2207,7 +2190,7 @@ textarea {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .adress-map {
     outline: none;
@@ -2462,7 +2445,7 @@ textarea {
   }
   .logo-link {
     outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 .portfolio {
