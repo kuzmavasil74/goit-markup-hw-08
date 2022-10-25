@@ -980,7 +980,7 @@ textarea {
     color: #757575;
   }
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-mob-1x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././/images/Headeer/slider-img-mob-1x.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1085,7 +1085,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-tab-1x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././/images/Headeer/slider-img-tab-1x.jpeg);
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -1241,7 +1241,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-desc-1x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././/images/Headeer/slider-img-desc-1x.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

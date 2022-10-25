@@ -299,7 +299,7 @@ textarea{resize: none;}
         @include Roboto-400 ($fsz: 12px, $lh: 1.17, $lp: 0.01em);
       }
     .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-mob-1x.jpeg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././/images/Headeer/slider-img-mob-1x.jpeg);
         @media (min-devicepixel-ratio:2), 
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx)
@@ -372,7 +372,7 @@ textarea{resize: none;}
 @include tablet{
     
     .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-tab-1x.jpeg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././/images/Headeer/slider-img-tab-1x.jpeg);
         @media (min-devicepixel-ratio:2), 
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx)
@@ -491,7 +491,7 @@ textarea{resize: none;}
 }
 @include desctop {
     .hero {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/Headeer/slider-img-desc-1x.jpeg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(.././/images/Headeer/slider-img-desc-1x.jpeg);
         @media (min-devicepixel-ratio:2), 
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx)
