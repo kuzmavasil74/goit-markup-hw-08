@@ -8,6 +8,11 @@
     display: flex;
   }
   
+  @media screen and (max-width: 767px) {
+    .logo-link  {
+      margin-bottom: 20px;
+    }
+  }
   .logo {
     color: $accent-color;
   }

@@ -312,7 +312,7 @@ textarea{resize: none;}
         width: 100%;
         height: 400px;
         background-color: $background-color;
-        padding-bottom: 200px;
+        padding-bottom: 198px;
         padding-top: 118px;
         &-titles {
             text-align: center;
@@ -379,14 +379,13 @@ textarea{resize: none;}
                 {background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
                 url(../images/Headeer/slider-img-tab-2x.jpeg);}
+       padding:118px 0;
         width: 100%;
-        height: 400px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-color: $background-color;
-        &-titles {
-            padding-top: 118px;
+        &-titles { 
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 30px;
@@ -504,9 +503,8 @@ textarea{resize: none;}
         background-color: $background-color;
 
         width: 100%;
-        height: 600px;
+       padding: 200px 0;
         &-titles {
-            padding-top: 200px;
             margin-right: auto;
             margin-left: auto;
             margin-bottom: 30px;
