@@ -308,12 +308,12 @@
         }  
     }
     .categories-description {
-        display: block;
-        @include flex-centre ($jc:space-between);
+        @include flex-centre ();
         flex-wrap: wrap;
         gap: 30px;
         margin: 0px;
         flex-basis: calc((100% - 60px) / 3);
+        padding-bottom: 94px;
     }
     .catego {
         outline: none;

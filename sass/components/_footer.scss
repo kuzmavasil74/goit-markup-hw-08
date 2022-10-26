@@ -112,6 +112,7 @@
     .adress-map {
       outline: none;
       margin-bottom: 10px;
+      font-weight: 400;
       font-style: normal;
       font-size: 14px;
       line-height: 24px;
@@ -203,11 +204,11 @@
     .contacts-tel-footer {
       outline: none;
       text-decoration: none;
-      color: #757575;
-      font-weight: 500;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
       font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
+      line-height: 24px;
+      letter-spacing: 0.03em;
       font-style: normal;
     }
   }
@@ -342,11 +343,11 @@
     .contacts-tel-footer {
       outline: none;
       text-decoration: none;
-      color: #757575;
-      font-weight: 500;
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 400;
       font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
+      line-height: 24px;
+      letter-spacing: 0.03em;
       font-style: normal;
     }
   }
